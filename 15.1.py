@@ -4,9 +4,5 @@ class Transport:
         self.max_speed = max_speed
         self.mileage = mileage
 
-class Autobus(Transport):
-    def info(self):
-        print(f"Название автомобиля: {self.name} Скорость: {self.max_speed} Пробег: {self.mileage}")
-
-auto = Autobus("Renault Logan", 180, 12)
-auto.info()
+autobus = Transport("Renaul Logan", 180, 12)
+print(f"Название автомобиля: {autobus.name} Скорость: {autobus.max_speed} Пробег: {autobus.mileage}")
